@@ -1,4 +1,4 @@
-module kogi::QL::Syntax2
+module kogi::QL::Syntax
 
 extend lang::std::Layout;
 extend lang::std::Id;

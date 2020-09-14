@@ -2,7 +2,7 @@ module kogi::QL::Plugin
 
 import ParseTree;
 import kogi::Compile;
-import kogi::QL::Syntax2;
+import kogi::QL::Syntax;
 import kogi::QL::Lexical;
 import kogi::simplification::RemoveUnitProduction;
 
