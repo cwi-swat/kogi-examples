@@ -43,6 +43,5 @@ syntax Expression
    | bracket "(" Expression e ")"
    | conc: Expression lhs "||" Expression rhs
    |  add: Expression lhs "+" Expression rhs
-          | sub: Expression lhs "-" Expression rhs
-          
+   | sub: Expression lhs "-" Expression rhs
   ;

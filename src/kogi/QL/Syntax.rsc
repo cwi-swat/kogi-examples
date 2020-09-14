@@ -26,22 +26,16 @@ syntax Expr
   | \false: "false"
   | bracket "(" Expr ")"
   | not: "!" Expr
-  //| left (
-    |  mul: Expr "*" Expr
-    | div: Expr "/" Expr
-  //)
-  //> left (
-   |   add: Expr "+" Expr
-    | sub: Expr "-" Expr
-  //)
-  //> non-assoc (
-    |  lt: Expr "\<" Expr
-    | leq: Expr "\<=" Expr
-    | gt: Expr "\>" Expr
-    | geq: Expr "\>=" Expr
-    | eq: Expr "==" Expr
-    | neq: Expr "!=" Expr
-  //)
+  |  mul: Expr "*" Expr
+  | div: Expr "/" Expr
+  |   add: Expr "+" Expr
+  | sub: Expr "-" Expr
+  |  lt: Expr "\<" Expr
+  | leq: Expr "\<=" Expr
+  | gt: Expr "\>" Expr
+  | geq: Expr "\>=" Expr
+  | eq: Expr "==" Expr
+  | neq: Expr "!=" Expr
   | and: Expr "&&" Expr
   | or: Expr "||" Expr
   ;

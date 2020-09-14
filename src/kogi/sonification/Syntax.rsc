@@ -12,7 +12,6 @@ start syntax Program
   = a: "run program" Connection* connections
   ;
   
-  
 syntax Connection
   = sound: SoundConnection connections 
   | control: ControllingParameters params
@@ -79,14 +78,11 @@ syntax DataSource
   | movement: "device movement along" Id text "axis"
   | rotation: "device rotation along" Id text "axis"
   ;
-  
-//lexical Int
-// = [0-9]+;
- 
+
 lexical IntegerValue
  = intf: [0-9]+; 
   
-// TODO: add support to images. For now I will leave it as a string.
+// TODO: add support to images.
 lexical ImageValue 
   = "\"" ![\"]*  "\"";
   
